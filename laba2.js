@@ -12,7 +12,7 @@
 function getRectangleArea(width, height) {
     return width*height
 }
-
+console.log(getRectangleArea(5, 10))
 /**
  * Returns a circumference of circle given by radius.
  *
