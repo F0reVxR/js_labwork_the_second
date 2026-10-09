@@ -523,10 +523,10 @@ function roundToSmallestInteger(number) {
  * 5.1  => 6
  * -5.9 => -5
  */
-function roundToLargestInteger() {
-
+function roundToLargestInteger(number) {
+    return Math.ceil(number)
 }
-
+//console.log(roundToLargestInteger(-5.9))
 /**
  * Returns the value of a number rounded to the nearest integer.
  *
