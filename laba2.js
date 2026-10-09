@@ -302,10 +302,15 @@ function getSumToN(n) {
  *   202 => 4  // (2+0+2)
  *   5   => 5  // 5
  */
-function getSumOfDigits() {
-
+function getSumOfDigits(num) {
+    let sum = 0
+    while (num > 0) {
+        sum += num % 10;
+        num = Math.floor(num / 10);
+    }
+    return sum
 }
-
+//console.log(getSumOfDigits(2))
 /**
  * Returns true if the given number is a power of two, false otherwise.
  *
