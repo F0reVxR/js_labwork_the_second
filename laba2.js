@@ -242,10 +242,10 @@ function toNumber(value, def) {
  *   -2 => -8
  *   0  => 0
  */
-function getCube() {
-
+function getCube(num) {
+    return num**3
 }
-
+//console.log(getCube(-2))
 /**
  * Returns the Fibonacci number located at the index position.
  *
