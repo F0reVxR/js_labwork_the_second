@@ -339,10 +339,11 @@ function isPowerOfTwo(num) {
  *   0 => 0
  *   Math.PI / 2 => 1
  */
-function getSine() {
-
+function getSine(num) {
+    return Math.sin(num)
 }
-
+// console.log(getSine(Math.PI/2))
+// console.log(getSine(0))
 /**
  * Returns a string representation of a number in a specified base (radix).
  *
