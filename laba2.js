@@ -553,10 +553,10 @@ function roundToNearestInteger(number) {
  * 5.4  => 5
  * -5.5 => -5
  */
-function getIntegerPartNumber() {
-
+function getIntegerPartNumber(number) {
+    return Math.trunc(number)
 }
-
+//console.log(getIntegerPartNumber(-5.1))
 /**
  * Returns the sum of numbers.
  *
