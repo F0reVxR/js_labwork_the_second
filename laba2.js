@@ -218,10 +218,19 @@ function isPrime(n) {
  *   toNumber(42, 0) => 42
  *   toNumber(new Number(42), 0) => 42
  */
-function toNumber() {
-
+function toNumber(value, def) {
+    if (Number.isFinite((Number(value))) === true){
+        return Number(value)
+    }
+    else{
+        return def
+    }
 }
-
+// console.log(toNumber(null, 0))
+// console.log(toNumber('num', 0))
+// console.log(toNumber('1', 0))
+// console.log(toNumber(42, 0))
+// console.log(toNumber(new Number(42), 0))
 /**
  * Returns the cube of the given number.
  *
