@@ -132,10 +132,10 @@ function getLastDigit(value) {
  *     '37'     => 37
  * '-525.5'     => -525.5
  */
-function parseNumberFromString() {
-
+function parseNumberFromString(value) {
+    return Number(value)
 }
-
+//console.log(parseNumberFromString('-525.5'))
 /**
  * Returns a diagonal length of the rectangular parallelepiped given by its sides a,b,c.
  *
