@@ -259,10 +259,19 @@ function getCube(num) {
  *   3  => 2
  *   10 => 55
  */
-function getFibonacciNumber() {
+function getFibonacciNumber(index) {
+    if (!Number.isInteger(index) || index < 0) {
+        return undefined;
+    }
+    let prev = 0
+    let curr = 1
 
+    for (let i = 0; i < index; i++) {
+        [prev, curr] = [curr, prev + curr]
+    }
+    return prev
 }
-
+//console.log(getFibonacciNumber(10))
 /**
  * Returns the sum of all numbers from 1 to n.
  *
