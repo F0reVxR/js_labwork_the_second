@@ -97,10 +97,13 @@ function getLinearEquationRoot(a, b) {
  *   (0,-1) (1,0)    => π/2
  *   (0,1) (0,1)     => 0
  */
-function getAngleBetweenVectors() {
-
+function getAngleBetweenVectors(x1, y1, x2, y2) {
+    mult = x1*x2 + y1*y2
+    first_scal = (x1**2 + y1**2)**(1/2)
+    sec_scal = (x2**2 + y2**2)**(1/2)
+    return Math.acos(mult/(first_scal*sec_scal))
 }
-
+// console.log(getAngleBetweenVectors(1, 0, 0, 1))
 /**
  * Returns a last digit of a integer number.
  * The input parameter will always be greater than or equal to zero and will be in decimal notation.
