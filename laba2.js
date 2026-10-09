@@ -569,10 +569,10 @@ function getIntegerPartNumber(number) {
  * 1, 2, 3       => 6
  * 0.1, 0.2, 0.3 => 0.6
  */
-function getSumOfNumbers() {
-
+function getSumOfNumbers(x1, x2, x3) {
+    return x1+x2+x3
 }
-
+//console.log(getSumOfNumbers(1, 1, 1))
 /**
  * Returns the largest number.
  *
