@@ -387,7 +387,7 @@ function toExponential(number, fractionDigits) {
 function toFixed(number, fractionDigits) {
     return number.toFixed(fractionDigits)
 }
-console.log(toFixed(12345, 2))
+//console.log(toFixed(12345, 2))
 /**
  * Returns a string representation of a number in normal (fixed-point or exponential)
  * notation rounded to precision significant digits.
@@ -400,10 +400,10 @@ console.log(toFixed(12345, 2))
  * 12345, 7    => '12345.00'
  * 12.345, 4   => '12.35'
  */
-function toPrecision() {
-
+function toPrecision(number, precision) {
+    return number.toPrecision(precision)
 }
-
+//console.log(toPrecision(12345, 79))
 /**
  * Returns the primitive value of a Number object.
  *
