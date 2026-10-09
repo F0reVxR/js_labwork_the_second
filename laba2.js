@@ -483,7 +483,7 @@ function getFloatOnString(str) {
 function getIntegerOnString(str, base) {
     return parseInt(str, base)
 }
-console.log(getIntegerOnString('fhdjhfjd', 10))
+//console.log(getIntegerOnString('fhdjhfjd', 10))
 /**
  * Returns whether a number is a safe integer.
  *
@@ -495,10 +495,10 @@ console.log(getIntegerOnString('fhdjhfjd', 10))
  * 3.5      => false
  * 2 ** 53  => false
  */
-function isSafeInteger() {
-
+function isSafeInteger(number) {
+    return Number.isSafeInteger(number)
 }
-
+//console.log(isSafeInteger(10))
 /**
  * Returns the smallest integer less than or equal to a given number.
  *
