@@ -433,10 +433,10 @@ console.log(getNumberValue(-5))
  * 5        => true
  * '5'      => false
  */
-function isNumber() {
-
+function isNumber(number) {
+    return typeof number === 'number' && Number.isFinite(number)
 }
-
+//console.log(isNumber(NaN))
 /**
  * Returns a boolean value indicating whether a number is an integer or not.
  *
