@@ -632,7 +632,7 @@ function getHypotenuse(a, b) {
  * 10 => 5
  * 15 => 8
  */
-function getCountOfOddNumbers() {
-
+function getCountOfOddNumbers(number) {
+    return Math.floor((number+1) / 2)
 }
-
+//console.log(getCountOfOddNumbers(15))
