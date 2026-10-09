@@ -538,10 +538,10 @@ function roundToLargestInteger(number) {
  * 5.4  => 5
  * -5.5 => -5
  */
-function roundToNearestInteger() {
-
+function roundToNearestInteger(number) {
+    return Math.round(number)
 }
-
+//console.log(roundToNearestInteger(-5.5))
 /**
  * Returns the integer part of a number by removing any fractional digits.
  *
