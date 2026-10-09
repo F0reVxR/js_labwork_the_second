@@ -601,10 +601,10 @@ function getMaxNumber(firstNumber, secondNumber) {
  * -5, 0 => -5 | -4 | -3 | -2 | -1 | 0
  * -1, 1 => -1 | 0 | 1
  */
-function getRandomInteger() {
-
+function getRandomInteger(min, max) {
+    return Math.floor(Math.random() * (max - min + 1)) + min
 }
-
+//console.log(getRandomInteger(1, 76))
 /**
  * Returns the length of the hypotenuse of a right triangle.
  *
