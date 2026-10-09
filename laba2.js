@@ -322,10 +322,13 @@ function getSumOfDigits(num) {
  *   16  => true
  *   15  => false
  */
-function isPowerOfTwo() {
-
+function isPowerOfTwo(num) {
+    while (num%2 === 0){
+        num/=2
+    }
+    return num===1
 }
-
+//console.log(isPowerOfTwo(1023))
 /**
  * Returns the sine of a number.
  *
