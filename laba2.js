@@ -462,10 +462,10 @@ function isInteger(number) {
  * '4.567abcdefgh' => 4.567
  * 'abcdefgh'      => NaN
  */
-function getFloatOnString() {
-
+function getFloatOnString(str) {
+    return parseFloat(str)
 }
-
+//console.log(getFloatOnString('fhdjhfjd'))
 /**
  * Returns an integer of the specified base or, if the number cannot be parsed
  * from the argument, returns NaN.
