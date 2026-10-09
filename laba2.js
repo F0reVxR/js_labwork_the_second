@@ -355,10 +355,10 @@ function getSine(num) {
  * 255, 16 => 'ff'
  * 2, 2    => '10'
  */
-function numberToStringInBase() {
-
+function numberToStringInBase(number, base) {
+    return number.toString(base)
 }
-
+//console.log(numberToStringInBase(255, 16))
 /**
  * Returns a string representation of a number in exponential notation.
  *
