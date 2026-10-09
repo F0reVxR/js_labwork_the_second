@@ -480,10 +480,10 @@ function getFloatOnString(str) {
  * '1.234', 2           => 1
  * '10', 8              => 8
  */
-function getIntegerOnString() {
-
+function getIntegerOnString(str, base) {
+    return parseInt(str, base)
 }
-
+console.log(getIntegerOnString('fhdjhfjd', 10))
 /**
  * Returns whether a number is a safe integer.
  *
