@@ -414,10 +414,10 @@ function toPrecision(number, precision) {
  * new Number(5) => 5
  * Number(-5)    => -5
  */
-function getNumberValue() {
-
+function getNumberValue(number) {
+    return Number(number)
 }
-
+console.log(getNumberValue(-5))
 /**
  * Returns a boolean value indicating whether the parameter is a number or not.
  *
