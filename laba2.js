@@ -417,7 +417,7 @@ function toPrecision(number, precision) {
 function getNumberValue(number) {
     return Number(number)
 }
-console.log(getNumberValue(-5))
+//console.log(getNumberValue(-5))
 /**
  * Returns a boolean value indicating whether the parameter is a number or not.
  *
@@ -448,10 +448,10 @@ function isNumber(number) {
  * 5.1  => false
  * '5'  => false
  */
-function isInteger() {
-
+function isInteger(number) {
+    return Number.isInteger(number)
 }
-
+//console.log(isInteger(555))
 /**
  * Returns a floating point number or, if the number cannot be parsed from the argument, returns NaN.
  *
