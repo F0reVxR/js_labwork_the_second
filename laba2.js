@@ -40,10 +40,10 @@ function getCircleCircumference(radius) {
  *  10, 0  => 5
  *  -3, 3  => 0
  */
-function getAverage() {
-
+function getAverage(value1, value2) {
+    return (value1+value2)/2
 }
-
+// console.log(getAverage(5, 5))
 /**
  * Returns a distance between two points by cartesian coordinates.
  *
