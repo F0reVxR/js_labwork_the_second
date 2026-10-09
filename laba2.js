@@ -615,10 +615,10 @@ function getRandomInteger(min, max) {
  * @example:
  * 3, 4 => 5
  */
-function getHypotenuse() {
-
+function getHypotenuse(a, b) {
+    return (a**2 + b**2)**(1/2)
 }
-
+//console.log(getHypotenuse(3, 7))
 /**
  * Returns count of odd numbers from zero to the resulting number.
  * The resulting number is taken into account.
