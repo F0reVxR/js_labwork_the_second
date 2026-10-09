@@ -585,10 +585,10 @@ function getSumOfNumbers(x1, x2, x3) {
  * -5, -6 => -5
  * 0, 5   => 5
  */
-function getMaxNumber() {
-
+function getMaxNumber(firstNumber, secondNumber) {
+    return firstNumber > secondNumber ? firstNumber : secondNumber
 }
-
+//console.log(getMaxNumber(1, 76))
 /**
  * Returns a random integer in the range from min to max.
  *
